@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+    tr{
+        border-bottom: 1px solid #cbcbcb;
+
+    }
+    td{
+        border-bottom: 1px solid #cbcbcb;
+        padding: 10px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+    <h1>Idk what is it.</h1>
+    {% for student in data %}
+    {% if student["Email"]==email and student["Password"]==password %}
+    <h1>{{student['Name']}} {{student['Surname']}}</h1>
+    <img src="{{student['Profile Picture']}}" alt="">
+    <table>
+        <tr>
+            <td>Email</td>
+            <td>{{student['Email']}}</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>{{student['Phone']}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{student['Age']}}</td>
+        </tr>
+        <tr>
+            <td>Roll No</td>
+            <td>{{student['Roll No']}}</td>
+        </tr>
+        <tr>
+            <td>Semester</td>
+            <td>{{student['Semester']}}</td>
+        </tr>
+        
+            <td>
+    </table>
+    <table>
+        {% for courses in student['Courses']%}
+            {% for k,v in courses.items()%}
+                <tr>
+                    <td>{{k}}</td>
+                    <td>{{v}}</td>
+                </tr>
+                
+            {% endfor %}
+            
+        {% endfor %}
+        <br>
+    </table>
+    {% endif %}
+    {% endfor %}
+    
+    
+
+    
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+    "Students":
+    [
+        {
+            "Name": "John",
+            "Surname": "Doe",
+            "Age": 20,
+            "Email": "john@xyz.com",
+            "Phone": "123-456-789",
+            "Roll No": "12345",
+            "Semester": "1",
+            "Password": "12345",
+            "Branch": "CSE",
+            "Courses" :
+            [
+                {
+                    "Course Name": "C#",
+                    "Course Code": "CSE-101",
+                    "Course Credit": "3",
+                    "Course Grade": "A"
+                },
+                {
+                    "Course Name": "C++",
+                    "Course Code": "CSE-102",
+                    "Course Credit": "3",
+                    "Course Grade": "B"
+                },
+                {
+                    "Course Name": "Java",
+                    "Course Code": "CSE-103",
+                    "Course Credit": "3",
+                    "Course Grade": "C"
+                }
+            ],
+            "CGPA": "3.00"
+        },
+        {
+            "Name": "Mikasa",
+            "Surname": "Ackerman",
+            "Age": 20,
+            "Password": "12345",
+            "Email": "mikasa@xyz.com",
+            "Phone": "123-456-789",
+            "Roll No": "12345",
+            "Semester": "1",
+            "Profile Picture": "https://avatars.githubusercontent.com/u/93721533?v=4",
+            "Branch": "CSE",
+            "Courses" :
+            [
+                {
+                    "Course Name": "Python",
+                    "Course Code": "CSE-101",
+                    "Course Credit": "3",
+                    "Course Grade": "A"
+                },
+                {
+                    "Course Name": "C++",
+                    "Course Code": "CSE-102",
+                    "Course Credit": "3",
+                    "Course Grade": "A"
+                },
+                {
+                    "Course Name": "Java",
+                    "Course Code": "CSE-103",
+                    "Course Credit": "3",
+                    "Course Grade": "A"
+                }
+            ],
+            "CGPA": "3.8"
+        }
+
+
+        
+        
+    ] 
+}
